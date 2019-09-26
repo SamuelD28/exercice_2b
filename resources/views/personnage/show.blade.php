@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+    <h1>@lang('personnage.show_title')</h1>
     <a href="{{ url('personnages/' . $personnage->id . '/edit' ) }}">
         <button>Modifier</button>
     </a>

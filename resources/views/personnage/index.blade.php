@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>Liste de personnages</h1>
+    <h1>@lang('personnage.index_title')</h1>
     <ul>
     @foreach($personnages as $personnage)
         <li>

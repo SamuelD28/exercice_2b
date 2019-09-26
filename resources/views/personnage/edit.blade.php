@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+<h1>@lang('personnage.edit_title')</h1>
 <form>
   <div class="form-row">
     <div class="form-group col-md-12">
@@ -8,14 +9,14 @@
       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Sagesse</label>
+      <label for="inputSagesse">@lang('personnage.wisdom_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
              id="inputSagesse"
              value="{{ $personnage->sagesse }}"
-             placeholder="Sagesse">
+             placeholder="@lang('personnage.wisdom_trait')">
     </div>
     <div class="form-group col-md-4">
       <label for="inputSagesse">Charisme</label>

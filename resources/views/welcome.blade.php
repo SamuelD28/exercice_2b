@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>Bienvenue dans dongon et dragon<h1>
+    <h1>@lang('index.welcome')<h1>
 @endsection

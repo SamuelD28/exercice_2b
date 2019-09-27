@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Personnage;
+use App\Character;
 use Illuminate\Http\Request;
 
 /**
@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
  *
  * @author Samuel Dube
  */
-class PersonnageController extends Controller
+class CharacterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,8 +20,8 @@ class PersonnageController extends Controller
      */
     public function index()
     {
-        $personnages = Personnage::all();
-        return view('personnage.index', ['personnages' => $personnages]);
+        $characters = Character::all();
+        return view('character.index', ['characters' => $characters]);
     }
 
     /**
@@ -31,7 +31,7 @@ class PersonnageController extends Controller
      */
     public function create()
     {
-        return view('personnage.create');
+        return view('character.create');
     }
 
     /**
@@ -48,33 +48,33 @@ class PersonnageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Personnage  $personnage
+     * @param  \App\Character  $character
      * @return \Illuminate\Http\Response
      */
-    public function show(Personnage $personnage)
+    public function show(Character $character)
     {
-        return view('personnage.show', ['personnage' => $personnage]);
+        return view('character.show', ['character' => $character]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Personnage  $personnage
+     * @param  \App\Character  $character
      * @return \Illuminate\Http\Response
      */
-    public function edit(Personnage $personnage)
+    public function edit(Character $character)
     {
-        return view('personnage.edit', ['personnage' => $personnage]);
+        return view('character.edit', ['character' => $character]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Personnage  $personnage
+     * @param  \App\Character  $character
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Personnage $personnage)
+    public function update(Request $request, Character $character)
     {
         //
     }
@@ -82,10 +82,10 @@ class PersonnageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Personnage  $personnage
+     * @param  \App\Character  $character
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Personnage $personnage)
+    public function destroy(Character $character)
     {
         //
     }

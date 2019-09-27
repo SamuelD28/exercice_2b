@@ -18,7 +18,7 @@
  * class. All the routes follow the rest standard listed below.
  */
 
-Route::resource('personnages', 'PersonnageController');
+Route::resource('character', 'CharacterController');
 
 Route::get('/', function(){
     return view('welcome');
@@ -27,10 +27,10 @@ Route::get('/', function(){
 /**
  * The above line creates all the routes below.
  */
-// Route::get('personnages', 'PersonnageController@index');
-// Route::get('personnages/create', 'PersonnageController@create');
-// Route::post('personnages', 'PersonnageController@store');
-// Route::get('personnages/{personnage}', 'PersonnageController@show');
-// Route::get('personnages/{personnage}/edit', 'PersonnageController@edit');
-// Route::put('personnages/{personnage}', 'PersonnageController@update');
-// Route::delete('personnages/{personnage}', 'PersonnageController@destroy');
+// Route::get('personnages', 'CharacterController@index');
+// Route::get('personnages/create', 'CharacterController@create');
+// Route::post('personnages', 'CharacterController@store');
+// Route::get('personnages/{personnage}', 'CharacterController@show');
+// Route::get('personnages/{personnage}/edit', 'CharacterController@edit');
+// Route::put('personnages/{personnage}', 'CharacterController@update');
+// Route::delete('personnages/{personnage}', 'CharacterController@destroy');

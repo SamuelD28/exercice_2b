@@ -14,15 +14,15 @@ class CreatePersonnagesTable extends Migration
     public function up()
     {
         // Schema for the personnage table
-        Schema::create('personnages', function (Blueprint $table) {
+        Schema::create('characters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nom');
+            $table->string('name');
             $table->integer('intelligence');
-            $table->integer('force');
-            $table->integer('dexterite');
+            $table->integer('strength');
+            $table->integer('dexterity');
             $table->integer('constitution');
-            $table->integer('charisme');
-            $table->integer('sagesse');
+            $table->integer('charisma');
+            $table->integer('wisdom');
             $table->timestamps();
         });
     }
@@ -34,6 +34,6 @@ class CreatePersonnagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personnages');
+        Schema::dropIfExists('characters');
     }
 }

@@ -1,73 +1,76 @@
 @extends('layouts.master')
 
 @section('content')
-<h1>@lang('personnage.edit_title')</h1>
+<h1>@lang('character.edit_title')</h1>
 <form>
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputEmail4">Nom</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <label for="inputEmail4">@lang('character.name')</label>
+      <input type="text"
+             class="form-control"
+             id="inputName"
+             placeholder="@lang('character.name')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">@lang('personnage.wisdom_trait')</label>
+      <label for="inputSagesse">@lang('character.wisdom_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
-             id="inputSagesse"
+             id="inputWisdom"
              value="{{ $personnage->sagesse }}"
-             placeholder="@lang('personnage.wisdom_trait')">
+             placeholder="@lang('character.wisdom_trait')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Charisme</label>
+      <label for="inputCharisma">@lang('character.charisma_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
-             id="inputCharisme"
+             id="inputCharisma"
              value="{{ $personnage->charisme }}"
-             placeholder="Charisme">
+             placeholder="@lang('character.charisma_trait')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Dexterite</label>
+      <label for="inputDexterity">@lang('character.dexterity_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
-             id="inputDexterite"
+             id="inputDexterity"
              value="{{ $personnage->dexterite }}"
-             placeholder="Dexterite">
+             placeholder="@lang('character.dexterity_trait')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Constitution</label>
+      <label for="inputConsitution">@lang('character.constitution_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
              id="inputConsitution"
              value="{{ $personnage->constitution }}"
-             placeholder="Consitution">
+             placeholder="@lang('character.constitution_trait')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Intelligence</label>
+      <label for="inputIntelligence">@lang('character.intelligence_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
              id="inputIntelligence"
              value="{{ $personnage->intelligence }}"
-             placeholder="Intelligence">
+             placeholder="@lang('character.constitution_trait')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">Force</label>
+      <label for="inputStrength">@lang('character.strength_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
-             id="inputForce"
+             id="inputStrength"
              value="{{ $personnage->force }}"
-             placeholder="Force">
+             placeholder="@lang('character.strength_trait')...">
     </div>
-    <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <button type="submit" class="btn btn-primary">@lang('form.save')</button>
 </form>
 @endsection

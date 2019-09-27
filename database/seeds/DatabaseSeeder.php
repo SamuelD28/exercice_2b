@@ -12,6 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // We call the seeder for the personnage
-        $this->call(PersonnagesTableSeeder::class);
+        $this->call(CharactersTableSeeder::class);
     }
 }

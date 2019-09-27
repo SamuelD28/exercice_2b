@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PersonnagesTableSeeder extends Seeder
+class CharactersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class PersonnagesTableSeeder extends Seeder
     public function run()
     {
         // Calls the factory related to the personnage class for creating fake data.
-        factory(App\Personnage::class, 100)->create();
+        factory(App\Character::class, 100)->create();
     }
 }

@@ -18,7 +18,7 @@
  * class. All the routes follow the rest standard listed below.
  */
 
-Route::resource('character', 'CharacterController');
+Route::resource('characters', 'CharacterController');
 
 Route::get('/', function(){
     return view('welcome');

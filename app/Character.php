@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @author Samuel Dubé
  */
-class Personnage extends Model
+class Character extends Model
 {
     //
 }

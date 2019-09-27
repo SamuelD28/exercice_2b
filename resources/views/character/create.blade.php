@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>@lang('personnage.create_title')</h1>
+    <h1>@lang('character.create_title')</h1>
 @endsection

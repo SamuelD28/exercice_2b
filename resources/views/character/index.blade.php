@@ -1,11 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>@lang('personnage.index_title')</h1>
+    <h1>@lang('character.index_title')</h1>
     <ul>
-    @foreach($personnages as $personnage)
+    @foreach($characters as $character)
         <li>
-            <a href="{{ url('personnages/' . $personnage->id) }}">{{ $personnage->nom }} </a>
+            <a href="{{ url('characters/' . $character->id) }}">{{ $character->name }} </a>
         </li>
     @endforeach
     </ul>

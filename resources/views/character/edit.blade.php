@@ -5,20 +5,21 @@
 <form>
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="inputEmail4">@lang('character.name')</label>
+      <label for="inputName">@lang('character.name')</label>
       <input type="text"
              class="form-control"
              id="inputName"
+             value="{{ $character->name }}"
              placeholder="@lang('character.name')...">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputSagesse">@lang('character.wisdom_trait')</label>
+      <label for="inputWisdom">@lang('character.wisdom_trait')</label>
       <input type="number"
              class="form-control"
              max="18"
              min="3"
              id="inputWisdom"
-             value="{{ $personnage->sagesse }}"
+             value="{{ $character->wisdom }}"
              placeholder="@lang('character.wisdom_trait')...">
     </div>
     <div class="form-group col-md-4">
@@ -28,7 +29,7 @@
              max="18"
              min="3"
              id="inputCharisma"
-             value="{{ $personnage->charisme }}"
+             value="{{ $character->charisma }}"
              placeholder="@lang('character.charisma_trait')...">
     </div>
     <div class="form-group col-md-4">
@@ -38,7 +39,7 @@
              max="18"
              min="3"
              id="inputDexterity"
-             value="{{ $personnage->dexterite }}"
+             value="{{ $character->dexterity }}"
              placeholder="@lang('character.dexterity_trait')...">
     </div>
     <div class="form-group col-md-4">
@@ -48,7 +49,7 @@
              max="18"
              min="3"
              id="inputConsitution"
-             value="{{ $personnage->constitution }}"
+             value="{{ $character->constitution }}"
              placeholder="@lang('character.constitution_trait')...">
     </div>
     <div class="form-group col-md-4">
@@ -58,7 +59,7 @@
              max="18"
              min="3"
              id="inputIntelligence"
-             value="{{ $personnage->intelligence }}"
+             value="{{ $character->intelligence }}"
              placeholder="@lang('character.constitution_trait')...">
     </div>
     <div class="form-group col-md-4">
@@ -68,7 +69,7 @@
              max="18"
              min="3"
              id="inputStrength"
-             value="{{ $personnage->force }}"
+             value="{{ $character->strength }}"
              placeholder="@lang('character.strength_trait')...">
     </div>
     <button type="submit" class="btn btn-primary">@lang('form.save')</button>

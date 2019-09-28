@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Character;
+use App\Http\Requests\CharacterRequest;
 use Illuminate\Http\Request;
 
 /**
@@ -31,18 +32,31 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        return view('character.create');
+        return view('character.create', ['character' => new Character()]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\CharacterRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CharacterRequest $request)
     {
-        //
+        $validatedData = $request->validated();
+
+        $character = new Character();
+        $character->name = $request->input('name');
+        $character->wisdom = $request->input('wisdom');
+        $character->constitution = $request->input('constitution');
+        $character->strength = $request->input('strength');
+        $character->charisma = $request->input('charisma');
+        $character->dexterity = $request->input('dexterity');
+        $character->intelligence = $request->input('intelligence');
+
+        if($character->save()){
+            return $this->index();
+        }
     }
 
     /**
@@ -71,12 +85,22 @@ class CharacterController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Character  $character
+     * @param  \App\CharacterRequest  $character
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Character $character)
+    public function update(CharacterRequest $request, Character $character)
     {
-        //
+        $character->name = $request->input('name');
+        $character->wisdom = $request->input('wisdom');
+        $character->constitution = $request->input('constitution');
+        $character->strength = $request->input('strength');
+        $character->charisma = $request->input('charisma');
+        $character->dexterity = $request->input('dexterity');
+        $character->intelligence = $request->input('intelligence');
+
+        if($character->save()){
+            return $this->index();
+        }
     }
 
     /**
@@ -87,6 +111,8 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        if($character->destroy()){
+            return $this->index();
+        }
     }
 }

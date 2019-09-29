@@ -19,6 +19,9 @@
  */
 
 Route::resource('characters', 'CharacterController');
+Route::resource('characters/{id}/equipments', 'EquipmentController', [
+    'store'
+]);
 
 Route::get('/', function(){
     return view('welcome');

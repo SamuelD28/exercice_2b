@@ -12,4 +12,8 @@
     <h3>@lang('character.strength_trait') : {{ $character->strength }}</h3>
     <h3>@lang('character.constitution_trait') : {{ $character->constitution }}</h3>
     <h3>@lang('character.dexterity_trait') : {{ $character->dexterity }}</h3>
+
+    @foreach($equipments as $equipment)
+        <h3> {{ $equipment->name }} </h3>
+    @endforeach
 @endsection

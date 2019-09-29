@@ -1,4 +1,4 @@
-<form action="{{ $action }}"
+<form action="{{ url($action) }}"
       method="post"
       enctype="multipart/form-data">
 

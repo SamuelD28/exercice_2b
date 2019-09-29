@@ -14,7 +14,7 @@ class CharacterRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|min:5|max:100',
             'wisdom' => 'required|gte:3|lte:18',
             'constitution' => 'required|gte:3|lte:18',
             'strength' => 'required|gte:3|lte:18',

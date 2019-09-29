@@ -6,49 +6,49 @@ $inputs =
     'type'=>'text',
     'name'=>'name',
     'label'=> 'character.name',
-    'value'=> $character->name
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'wisdom',
     'label'=> 'character.wisdom_trait',
-    'value'=> $character->wisdom
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'charisma',
     'label'=> 'character.charisma_trait',
-    'value'=> $character->charisma
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'dexterity',
     'label'=> 'character.dexterity_trait',
-    'value'=> $character->dexterity
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'intelligence',
     'label'=> 'character.intelligence_trait',
-    'value'=> $character->intelligence
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'strength',
     'label'=> 'character.strength_trait',
-    'value'=> $character->strength
+    'value'=> ''
   ],
   [
     'size' => 4,
     'type'=>'number',
     'name'=>'constitution',
     'label'=> 'character.constitution_trait',
-    'value'=> $character->constitution
+    'value'=> ''
   ]];
 ?>
 
@@ -63,5 +63,5 @@ $inputs =
         'buttonText' => 'Ajouter'
         ])
     @endform
-    
+
 @endsection

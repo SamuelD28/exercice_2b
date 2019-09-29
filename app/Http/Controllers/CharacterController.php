@@ -32,7 +32,7 @@ class CharacterController extends Controller
      */
     public function create()
     {
-        return view('character.create', ['character' => new Character()]);
+        return view('character.create');
     }
 
     /**
@@ -65,7 +65,7 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        $equipments = Character::find($character->id)->equipements();
+        $equipments = Character::find($character->id)->equipments;
         return view('character.show', [
             'character' => $character,
             'equipments' => $equipments
@@ -80,7 +80,7 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        $equipments = Character::find($character->id)->equipements();
+        $equipments = Character::find($character->id)->equipments;
         return view('character.edit',[
             'character' => $character,
             'equipments' => $equipments

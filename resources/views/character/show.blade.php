@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts._master')
 
 @section('content')
     <h1>@lang('character.show_title')</h1>

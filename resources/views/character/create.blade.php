@@ -63,4 +63,5 @@ $inputs =
         'buttonText' => 'Ajouter'
         ])
     @endform
+    
 @endsection

@@ -10,6 +10,6 @@
     <h3>@lang('character.charisma_trait') : {{ $character->charisma }}</h3>
     <h3>@lang('character.intelligence_trait') {{ $character->intelligence }}</h3>
     <h3>@lang('character.strength_trait') : {{ $character->strength }}</h3>
-    <h3>@lang('character.consitution_trait') : {{ $character->constitution }}</h3>
+    <h3>@lang('character.constitution_trait') : {{ $character->constitution }}</h3>
     <h3>@lang('character.dexterity_trait') : {{ $character->dexterity }}</h3>
 @endsection

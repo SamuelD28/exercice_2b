@@ -11,5 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Character extends Model
 {
-    //
+    public function equipments(){
+        return $this->hasMany('App\Equipment');
+    }
 }

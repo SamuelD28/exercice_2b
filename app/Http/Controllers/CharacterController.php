@@ -43,8 +43,6 @@ class CharacterController extends Controller
      */
     public function store(CharacterRequest $request)
     {
-        $validatedData = $request->validated();
-
         $character = new Character();
         $character->name = $request->input('name');
         $character->wisdom = $request->input('wisdom');
@@ -67,7 +65,11 @@ class CharacterController extends Controller
      */
     public function show(Character $character)
     {
-        return view('character.show', ['character' => $character]);
+        $equipments = Character::find($character->id)->equipements();
+        return view('character.show', [
+            'character' => $character,
+            'equipments' => $equipments
+        ]);
     }
 
     /**
@@ -78,7 +80,11 @@ class CharacterController extends Controller
      */
     public function edit(Character $character)
     {
-        return view('character.edit', ['character' => $character]);
+        $equipments = Character::find($character->id)->equipements();
+        return view('character.edit',[
+            'character' => $character,
+            'equipments' => $equipments
+        ]);
     }
 
     /**

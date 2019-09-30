@@ -1,11 +1,11 @@
 @extends('layouts._master')
 
 @section('content')
-    <h1>@lang('character.show_title')</h1>
+    <h1 class="title">@lang('character.show_title')</h1>
     <a href="{{ url('characters/' . $character->id . '/edit' ) }}">
-        <button>@lang('form.modify')</button>
+        <button class="btn btn-primary">@lang('form.modify')</button>
     </a>
-    <h1>{{ $character->name }}</h1>
+    <h2>{{ $character->name }}</h2>
     <h3>@lang('character.wisdom_trait') : {{ $character->wisdom }}</h3>
     <h3>@lang('character.charisma_trait') : {{ $character->charisma }}</h3>
     <h3>@lang('character.intelligence_trait') {{ $character->intelligence }}</h3>

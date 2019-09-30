@@ -11,6 +11,6 @@ return [
     |
     */
 
-    'welcome' => 'Bienvenue dans Dongon et Dragon'
+    'welcome' => 'Bienvenue dans Dongeon & Dragon'
 ];
 

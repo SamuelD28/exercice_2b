@@ -53,15 +53,15 @@ $inputs =
 ?>
 
 @section('content')
-    <h1>@lang('character.create_title')</h1>
+    <h1 class="title">@lang('character.create_title')</h1>
     @errors(['errors' => $errors])
     @enderrors
     @form([
         'method' => 'post',
         'action' => url('characters'),
         'inputs' => $inputs,
-        'buttonText' => 'Ajouter'
+        'buttonText' => __('form.save')
         ])
     @endform
 
-@endsection
+@endsection 

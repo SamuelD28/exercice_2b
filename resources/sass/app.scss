@@ -1,1 +1,44 @@
-//
+#author {
+    justify-content: end;
+}
+
+.navbar {
+    background-color: #424C55;
+}
+
+.content {
+    padding: 5em;
+    background-color: #F5EDF0;
+}
+
+.title {
+    color: #424C55;
+}
+
+.btn-primary {
+    background-color:  #424C55;
+    color: #D1CCDC;
+    border-color: #424C55;
+}
+
+.btn-primary:hover {
+    background-color:  #D1CCDC;
+    color: #424C55;
+    border-color: #424C55;
+}
+
+.list-item-link {
+    color:  #424C55;
+}
+
+.list-item-link:hover {
+    color:  black;
+}
+
+.nav-link, .navbar-brand {
+    color: #D1CCDC;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #F5EDF0;
+}

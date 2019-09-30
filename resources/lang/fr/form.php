@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'save' => 'Sauvegarder',
+    'save' => 'Enregistrer',
     'modify' => 'Modifier',
     'create' => 'Créer',
     'cancel' => 'Cancel'

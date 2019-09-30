@@ -13,6 +13,7 @@ return [
 
     'brand' => 'DND',
     'home' => 'Accueil',
-    'create_character' => 'Nouveau personnage'
+    'create_character' => 'Création d\'un personnage',
+    'author' => 'Samuel Dubé & Samuel Colassin'
 ];
 

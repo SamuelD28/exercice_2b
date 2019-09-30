@@ -1,7 +1,7 @@
 @extends('layouts._master')
 
 @section('content')
-    <h1>@lang('character.index_title')</h1>
+    <h1 class="title">@lang('character.index_title')</h1>
     <ul>
     @foreach($characters as $character)
         <?php
@@ -13,7 +13,7 @@
                              $parsedDate->year;
         ?>
         <li>
-            <a href="{{ url('characters/' . $character->id) }}">
+            <a class="list-item-link" href="{{ url('characters/' . $character->id) }}">
                 <span>{{ $character->name }}</span>
                 <span>({{ $displayedDate }})</span>
             </a>

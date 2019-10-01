@@ -6,6 +6,10 @@
   background-color: #424C55;
 }
 
+.thead {
+  background-color: #bcb7b9;
+}
+
 .content {
   padding: 5em;
   background-color: #F5EDF0;

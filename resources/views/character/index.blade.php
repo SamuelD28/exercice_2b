@@ -2,22 +2,28 @@
 
 @section('content')
     <h1 class="title">@lang('character.index_title')</h1>
-    <ul>
-    @foreach($characters as $character)
-        <?php
-            $parsedDate = Carbon\Carbon::parse($character->created_at);
-            $displayedDate = $parsedDate->englishMonth .
-                             " " .
-                             $parsedDate->day .
-                             ", " .
-                             $parsedDate->year;
-        ?>
-        <li>
-            <a class="list-item-link" href="{{ url('characters/' . $character->id) }}">
-                <span>{{ $character->name }}</span>
-                <span>({{ $displayedDate }})</span>
-            </a>
-        </li>
-    @endforeach
-    </ul>
+    <table class="table table-hover">
+        <thead class="thead">
+            <tr>
+                <th scope="col">@lang('character.name')</th>
+                <th scope="col">@lang('character.creation')</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($characters as $character)
+                <?php
+                    $parsedDate = Carbon\Carbon::parse($character->created_at);
+                    $displayedDate = $parsedDate->englishMonth .
+                                    " " .
+                                    $parsedDate->day .
+                                    ", " .
+                                    $parsedDate->year;
+                ?>
+                <tr>
+                    <td><a class="list-item-link" href="{{ url('characters/' . $character->id) }}"> {{ $character->name }}</a></td>
+                    <td><a class="list-item-link" href="{{ url('characters/' . $character->id) }}"> ({{ $displayedDate }})</a></td>
+                </tr>
+            @endforeach
+        </tbody>    
+    </table>
 @endsection

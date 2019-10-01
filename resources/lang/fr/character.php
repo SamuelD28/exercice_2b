@@ -21,6 +21,7 @@ return [
     'create_title' => 'Création d\'un personnage',
     'edit_title' => 'Modification d\'un personnage',
     'show_title' => 'Détails du personnage',
-    'index_title' => 'Personnages'
+    'index_title' => 'Personnages',
+    'creation' => 'Date de création'
 ];
 

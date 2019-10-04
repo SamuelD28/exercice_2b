@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @include('partials._head')
     @include('partials._navbar')
-    <body class="body">
-        <div class="content">
+    <body class='body'>
+        <div class='content'>
             @section('content')
             <!-- The content of the page goes here -->
             @show

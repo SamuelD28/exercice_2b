@@ -24,4 +24,3 @@ return [
     'index_title' => 'Personnages',
     'creation' => 'Date de création'
 ];
-

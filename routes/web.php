@@ -11,7 +11,6 @@
 |
 */
 
-
 /**
  * Declare a resourcefull route for managing the personnage model.
  * Delegate all routes starting with personnages to the personnage controller
@@ -23,9 +22,7 @@ Route::resource('characters/{id}/equipments', 'EquipmentController', [
     'store'
 ]);
 
-Route::get('/', function(){
-    return view('welcome');
-});
+Route::get('/', 'CharacterController@index');
 
 /**
  * The above line creates all the routes below.

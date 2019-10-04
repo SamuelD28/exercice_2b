@@ -4,12 +4,17 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Class that handles specificity to the character request
+ * 
+ * @author Samuel Dube
+ */
 class CharacterRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array
+     * @return array Rules to apply on the resquest
      */
     public function rules()
     {

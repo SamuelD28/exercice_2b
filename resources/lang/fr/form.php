@@ -16,4 +16,3 @@ return [
     'create' => 'Créer',
     'cancel' => 'Cancel'
 ];
-

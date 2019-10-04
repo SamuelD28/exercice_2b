@@ -16,4 +16,3 @@ return [
     'create_character' => 'Création d\'un personnage',
     'author' => 'Samuel Dubé & Samuel Colassin'
 ];
-

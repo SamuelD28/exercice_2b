@@ -2,23 +2,6 @@
   justify-content: end;
 }
 
-.navbar {
-  background-color: #424C55;
-}
-
-.thead {
-  background-color: #bcb7b9;
-}
-
-.content {
-  padding: 5em;
-  background-color: #F5EDF0;
-}
-
-.title {
-  color: #424C55;
-}
-
 .btn-primary {
   background-color: #424C55;
   color: #D1CCDC;
@@ -31,12 +14,26 @@
   border-color: #424C55;
 }
 
-.list-item-link {
+.content {
+  padding: 5em;
+  background-color: #F5EDF0;
+}
+
+.flex-even {
+  flex: 1;
+}
+
+.list-item-link,
+.title {
   color: #424C55;
 }
 
 .list-item-link:hover {
   color: black;
+}
+
+.navbar {
+  background-color: #424C55;
 }
 
 .nav-link,
@@ -47,5 +44,9 @@
 .nav-link:hover,
 .navbar-brand:hover {
   color: #F5EDF0;
+}
+
+.thead {
+  background-color: #bcb7b9;
 }
 

@@ -2,6 +2,11 @@
 
 use Illuminate\Database\Seeder;
 
+/**
+ * Class that seeds characters into the db
+ * 
+ * @author Samuel Dube
+ */
 class CharactersTableSeeder extends Seeder
 {
     /**

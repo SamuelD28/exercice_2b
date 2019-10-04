@@ -11,7 +11,7 @@ return [
     |
     */
 
-    '_' => 'Equipement',
-    'name' => 'Nom'
+    '_' => 'Équipement',
+    'name' => 'Nom',
+    'add_equipment' => 'Ajouter un équipement' 
 ];
-

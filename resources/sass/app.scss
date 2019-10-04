@@ -1,48 +1,55 @@
+$accent-color : #424C55;
+$text-color : #D1CCDC;
+$background-color : #F5EDF0;
+
 #author {
     justify-content: end;
 }
 
-.navbar {
-    background-color: #424C55;
+.btn-primary {
+    background-color:  $accent-color;
+    color: $text-color;
+    border-color: $accent-color;
 }
 
-.thead {
-    background-color: #bcb7b9;
+.btn-primary:hover {
+    background-color:  $text-color;
+    color: $accent-color;
+    border-color: $accent-color;
 }
 
 .content {
     padding: 5em;
-    background-color: #F5EDF0;
+    background-color: $background-color;
 }
 
+.flex-even {
+    flex: 1;
+}
+
+.list-item-link, 
 .title {
-    color: #424C55;
-}
-
-.btn-primary {
-    background-color:  #424C55;
-    color: #D1CCDC;
-    border-color: #424C55;
-}
-
-.btn-primary:hover {
-    background-color:  #D1CCDC;
-    color: #424C55;
-    border-color: #424C55;
-}
-
-.list-item-link {
-    color:  #424C55;
+    color:  $accent-color;
 }
 
 .list-item-link:hover {
     color:  black;
 }
 
-.nav-link, .navbar-brand {
-    color: #D1CCDC;
+.navbar {
+    background-color: $accent-color;
 }
 
-.nav-link:hover, .navbar-brand:hover {
-    color: #F5EDF0;
+.nav-link, 
+.navbar-brand {
+    color: $text-color;
+}
+
+.nav-link:hover, 
+.navbar-brand:hover {
+    color: $background-color;
+}
+
+.thead {
+    background-color: #bcb7b9;
 }
